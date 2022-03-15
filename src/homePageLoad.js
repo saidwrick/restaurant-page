@@ -1,10 +1,11 @@
-const loadMenu = (() => {
+const homePageLoad = () => {
     const content = document.querySelector("#content");
 
-    content.innerHTML =  `<div class="nav-bar">
-<div class="tab selected">Home</div>
-    <div class="tab">Menu</div>
-    <div class="tab">Contact</div>
+    content.innerHTML = 
+`<div class="nav-bar">
+<div class="tab selected" id="home">Home</div>
+    <div class="tab" id="menu">Menu</div>
+    <div class="tab" id="contact">Contact</div>
 </div>
 
 <div class="main">
@@ -34,7 +35,8 @@ const loadMenu = (() => {
             123 Forest Drive, Forestville, Maine
         </div>
     </div>
-</div>`
+</div>`;
 
-    
-})();
+};
+
+export default homePageLoad;
